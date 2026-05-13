@@ -6,7 +6,7 @@
 ## Mô hình toán học
 
 ```math
-hat{y} = w \cdot x + b
+\hat{y} = w \cdot x + b
 ```
 
 ```math
