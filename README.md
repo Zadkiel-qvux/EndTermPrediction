@@ -5,9 +5,13 @@
 
 ## Mô hình toán học
 
-$$\hat{y} = w \cdot x + b$$
+```math
+hat{y} = w \cdot x + b
+```
 
-$$L = \frac{1}{2N} \sum_{i=1}^{N} (\hat{y}^{(i)} - y^{(i)})^2$$
+```math
+L = \frac{1}{2N} \sum_{i=1}^{N} (\hat{y}^{(i)} - y^{(i)})^2
+```
 
 ## Chạy trên máy cục bộ
 
