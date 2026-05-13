@@ -1,42 +1,39 @@
-# Dự đoán điểm cuối kỳ — CS523.N11
+# Dự đoán điểm cuối kỳ — CS523.Q21
 
-> Predict final exam scores from midterm scores using Linear Regression
-> implemented from scratch via Computational Graph.
+> Dự đoán điểm cuối kỳ từ điểm giữa kỳ bằng mô hình Hồi quy tuyến tính
+> được cài đặt thủ công qua Đồ thị tính toán (Computational Graph).
 
-## Live Demo
-
-**[Open App](YOUR_STREAMLIT_CLOUD_LINK_HERE)**
-
-## Mathematical Model
+## Mô hình toán học
 
 $$\hat{y} = w \cdot x + b$$
 
 $$L = \frac{1}{2N} \sum_{i=1}^{N} (\hat{y}^{(i)} - y^{(i)})^2$$
 
-## Run Locally
+## Chạy trên máy cục bộ
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/cs523-final-prediction
-cd cs523-final-prediction
+git clone https://github.com/Zadkiel-qvux/EndTermPrediction
+cd EndTermPrediction
 pip install -r requirements.txt
 streamlit run app.py
 ```
 
-## Project Structure
+## Cấu trúc dự án
 
+```text
+model.py          — Hồi quy tuyến tính từ đầu (NumPy)
+graph.py          — Vẽ Đồ thị tính toán (matplotlib)
+app.py            — Ứng dụng web Streamlit
+requirements.txt  — Danh sách thư viện
+data/             — Bộ dữ liệu (TRAIN2.xlsx)
 ```
-model.py   — Linear Regression from scratch (NumPy)
-graph.py   — Computational Graph visualizer (matplotlib)
-app.py     — Streamlit web application
-data/      — Dataset (TRAIN2.xlsx)
-```
 
-## Dataset
+## Bộ dữ liệu
 
-- 515 samples: midterm score → final score (scale 0–10)
-- 80/20 train/test split
+- 515 mẫu: điểm giữa kỳ → điểm cuối kỳ (thang điểm 0–10)
+- Tỉ lệ chia: 80% huấn luyện / 20% kiểm tra
 
-## References
+## Tài liệu tham khảo
 
 - [GeeksforGeeks — Computational Graphs in Deep Learning](https://www.geeksforgeeks.org/computational-graphs-in-deep-learning/)
-- CS523.N11 Group 13 slides
+- CS523.Q21 slides
